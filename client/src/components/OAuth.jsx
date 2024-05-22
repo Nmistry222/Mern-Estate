@@ -8,7 +8,7 @@ import { useNavigate } from 'react-router-dom'
 function OAuth() {
     const dispatch = useDispatch();
     const navigate = useNavigate();
-
+    
     const handleGoogleClick = async () => {
         try {   
             const provider = new GoogleAuthProvider()
@@ -30,7 +30,7 @@ function OAuth() {
             })
 
             const data = await res.json()
-            dispatch(signInSuccess(data));
+            dispatchEvent(signInSuccess(data));
             navigate('/');
         }
 
