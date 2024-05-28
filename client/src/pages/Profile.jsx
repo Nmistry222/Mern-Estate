@@ -203,12 +203,12 @@ function Profile() {
          <Link to={`/listing/${listing._id}`}>
            <img className="h-16 w-16 object-contain rounded-lg" src={listing.imageUrls[0]} alt="listing cover"/>
          </Link>
-         <Link className='flex-1 text-slate-700 font-semibold  hover:underline truncate' to={`/update-listing/${listing._id}`}>
+         <Link className='flex-1 text-slate-700 font-semibold  hover:underline truncate' to={`/listing/${listing._id}`}>
            <p>{listing.name}</p>
          </Link>
          <div className='flex flex-col items-center'>
            <button onClick={() => handleListingDelete(listing._id)} className='text-red-700'>Delete</button>
-          <Link to={`update-listing/${listing._id}`}>
+          <Link to={`/update-listing/${listing._id}`}>
            <button className='text-green-700'>Edit</button>
            </Link>
          </div>
