@@ -9,7 +9,7 @@
     "start": "node api/index.js",
     "install:client": "npm install --prefix client",
     "build:client": "npm run build --prefix client",
-    "build": "npm run install:client && npm run build:client"
+    "build": "npm run install:client && npm run build:client && ls dist"
   },
   "keywords": [],
   "author": "",
